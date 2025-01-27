@@ -15,10 +15,10 @@ Since the program tries to find a Knight's Tour from a random starting position,
 - By initializing the squares on the board with a value, we can determine whether we have visited a square or not.
 - We call the recursive function from our helper function in an if-statement expecting a certain return value to indicate a knight's tour was found.
 - In the recursive function,  a X and Y arithmetic computation on the current knight's X and Y coordinates is done to determine whether a knight move is valid; if it is valid, mark the square as visited and continue making recursive calls in an if-statement on the stack, noting that one of the paramters is a variable for the base case of 63 that is incremented each call indicating a built path
-- If the knight move is invalid, that is, all 8 knight moves were tried and invalid, return a 0 indicating a backtrack which will fail the recursive function call in the if-statement and go to the else statement where the grid is initialized back to unvisited
-- Try the next knight move
+- If the knight move is invalid, that is, all 8 knight moves were tried and invalid, return a 0 indicating a backtrack, which will fail the recursive function call in the if-statement on return and go to the else statement where the grid is initialized back to unvisited
+- Iterate through the loop and try the next knight move
 - Repeat last 3 steps
-- Once base case is reached, remove the recursive stack frames off the stack by returning 1. The final return will transfer control back to the other function that called the recursive function that started it all
+- Once the base case is reached, remove the recursive stack frames off the stack by returning 1. The final return will transfer control back to the other function that called the recursive function that started it all
 - Print knight's tour board
 
 ### Program:

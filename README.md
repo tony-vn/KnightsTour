@@ -14,9 +14,9 @@ Since the program tries to find a Knight's Tour from a random starting position,
 ### Implementation:
 - A coordinate system is used to map where the knight is, what the boundaries of the board is, and the moves the knight can make
 - By initializing the squares on the board with a value, a square can be determined to be visited or not by checking its value
-- The recursive function call happeens in a helper function in an if-statement that expects a true value to be returned, which indicates a knight's tour was found and thus print it
-- In the recursive function, arithmetic computations on the current knight's X and Y coordinates is done to determine whether a knight move is valid; if it is valid, mark the square as visited (moveCounter) and continue making recursive calls in an if-statement, noting that one of the parameters is incremented each call indicating a knight's tour being built and a step towards the base base of 63
-- If the knight move is invalid, that is, all 8 knight moves were tried and invalid, return a zero, indicating a backtrack, which will fail the recursive function call in the if-statement on return and go to the else statement where the grid is initialized back to unvisited
+- The recursive function call happeens in a helper function in an if-statement that expects a true value to be returned, which indicates a knight's tour was found and thus will print it when the recursive stack frames are completely popped off the stack
+- In the recursive function, apply the knight's move on the current knight's X and Y coordinates to determine whether a knight move is valid; if it is valid, mark the square as visited (moveCounter) and continue making recursive calls in an if-statement, noting that one of the parameters is incremented each call indicating a knight's tour being built and a step towards the base base of 63
+- If the knight move is invalid, that is, all 8 knight moves were tried and invalid, return a zero, indicating a backtrack, which will fail if-statement in which the recursive function call was made in to produce this recursive stack frame when it returns, thus going to the else statement where the grid is initialized back to unvisited
 - Iterate through the loop to try the next knight move
 - Repeat last 3 steps
 - Once the base case is reached, remove the recursive stack frames by returning 1 each frame. The final return will transfer control back to the other function that called the recursive function

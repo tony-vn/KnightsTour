@@ -33,6 +33,6 @@ A console application: The first line is the starting position given in terms of
 ![Console Picture](imgs/8x8ktConsolePrintExampleShort.png)
 
 ### Future Considerations
-- Test the program's performance and display it
-- Explore the other algorithms to solve the problem
+- Test the program's performance more exhaustively and display it
+- Explore other algorithms to solve the problem
 - Add a graphical and user interface

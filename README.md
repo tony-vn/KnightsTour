@@ -1,4 +1,4 @@
-![Console Picture]("imgs/Screenshot2025-01-27-085100_8x8ktConsolePrintExample.png")
+![Console Picture](imgs/8x8ktConsolePrintExample.png)
 
 # Knights Tour
 

@@ -1,5 +1,3 @@
-![Console Picture](imgs/8x8ktConsolePrintExample.png)
-
 # Knights Tour
 
 ### The Knight's Tour Problem:
@@ -26,6 +24,7 @@ Since the program tries to find a Knight's Tour from a random starting position,
 
 ### Program:
 A console application: The first line is the starting position given in terms of x and y, where the coordinates begin from the top-left corner starting at 0, respectively. What's printed after this line is the board in terms of the number in the path in which the knight's tour was reached, provided one was found. You can safely assume after a minute or so that no knight's tour can be found from that starting position.
+![Console Picture](imgs/8x8ktConsolePrintExampleShort.png)
 
 ### Future Considerations
 - Test the program's performance and display it

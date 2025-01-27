@@ -1,4 +1,4 @@
-![Console Picture]("imgs/Screenshot 2025-01-27 085100_8x8ktConsolePrintExample.png")
+![Console Picture]("imgs/Screenshot2025-01-27-085100_8x8ktConsolePrintExample.png")
 # Knights Tour
 
 ### The Knight's Tour Problem:
